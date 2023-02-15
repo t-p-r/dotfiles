@@ -60,7 +60,7 @@
 "/home/tar_palantir/.dwm/rofi/files/scripts/powermenu_t1"
   Mod4+x
 
-"gnome-system-monitor"
+"alacritty -e btop"
   control+Shift+Escape
 
 "xfce4-screenshooter"

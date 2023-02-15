@@ -14,7 +14,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 8;       /* vertical padding of bar */
 static const int sidepad            = 12;       /* horizontal padding of bar */
 static const char *fonts[]          = { "JetBrains Mono Nerd Font:size=11" };
-static const char dmenufont[]       = "JetBrains Mono NL:size=11";
+static const char dmenufont[]       = "JetBrains Mono Nerd Font:size=11";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
