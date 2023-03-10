@@ -13,6 +13,10 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 8;       /* vertical padding of bar */
 static const int sidepad            = 12;       /* horizontal padding of bar */
+static const int float_x			= 640;	
+static const int float_y			= 320;	/* floating window spawn locations */
+static const int float_w			= 1280;	
+static const int float_h			= 800;	/* floating window sizes */
 static const char *fonts[]          = { "JetBrains Mono Nerd Font:size=11" };
 static const char dmenufont[]       = "JetBrains Mono Nerd Font:size=11";
 static const char col_gray1[]       = "#222222";
@@ -34,11 +38,20 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                instance    title       tags mask     isfloating   monitor */
-	{ "discord",  	        NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "deluge",  	        NULL,       NULL,       1 << 7,       0,           -1 },
-	{ "Deluge",  	        NULL,       NULL,       1 << 7,       0,           -1 },
-	{ "zalo.exe",  	        NULL,       NULL,       1 << 6,       0,           -1 },
+	/* class      	instance    title       		tags mask     isfloating   monitor    float x,y,w,h         floatborderpx*/
+	{ "Firefox",    NULL,		"Open Folder",      0,            1,           -1,        640,320,1280,800,        -1 },
+	{ "Firefox",    NULL,       "Open File",       	0,            1,           -1,        640,320,1280,800,        -1 },
+	{ "Code",  		NULL,       "Open Folder",      0,       	  1,           -1,        640,320,1280,800,        -1 },
+	{ "Code",  		NULL,       "Open File",       	0,       	  1,           -1,        640,320,1280,800,        -1 },
+	{ "Volctl",  	NULL,       "Preferences",      0,       	  1,           -1,        800,320,960,800,        -1 },
+	{ "Deluge",     NULL,       "Add Torrents", 	0,       	  1,           -1,        800,400,960,640,        -1 },
+	{ "Deluge",     NULL,       "Preferences", 		0,       	  1,           -1,        800,400,960,640,        -1 },
+	{ "Deluge",  	NULL,       NULL,       		1 << 7,       0,           -1 },
+	{ "discord",  	NULL,       NULL,       		1 << 8,       0,           -1 },
+	{ "zalo.exe",  	NULL,       NULL,       		1 << 6,       0,           -1 },
+	{ "Xfce4-power-manager-settings",  		NULL,       "Power Manager",       	0,       	  1,           -1,        800,400,960,640,        -1 },
+	{ "Pavucontrol",  	  					NULL,       "Volume Control",       0,       	  1,           -1,        800,400,960,640,        -1 },
+	{ "polkit-kde-authentication-agent-1",  NULL,    "Authentication Required", 0,       	  1,           -1,        800,600,960,240,        -1 },
 };
 
 /* layout(s) */

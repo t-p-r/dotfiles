@@ -1,4 +1,15 @@
 diff a/dwm.c b/dwm.c	(rejected hunks)
+<<<<<<< HEAD
+@@ -139,6 +141,8 @@ typedef struct {
+ 	unsigned int tags;
+ 	int isfloating;
+ 	int monitor;
++	int floatx, floaty, floatw, floath;
++	int floatborderpx;
+ } Rule;
+ 
+ /* function declarations */
+=======
 @@ -241,6 +241,8 @@ static int screen;
  static int sw, sh;           /* X display screen geometry width, height */
  static int bh, blw = 0;      /* bar geometry */
@@ -59,3 +70,4 @@ diff a/dwm.c b/dwm.c	(rejected hunks)
  				CopyFromParent, DefaultVisual(dpy, screen),
  				CWOverrideRedirect|CWBackPixmap|CWEventMask, &wa);
  		XDefineCursor(dpy, m->barwin, cursor[CurNormal]->cursor);
+>>>>>>> 809ad4e (main)

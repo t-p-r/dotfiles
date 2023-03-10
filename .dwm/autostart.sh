@@ -14,7 +14,7 @@ feh --bg-fill /home/tar_palantir/.dwm/liyue.jpg &
 nm-applet & 
 xfce4-power-manager & 
 ibus-daemon -drxR & 
-volumeicon & 
+volctl & 
 /usr/lib/polkit-kde-authentication-agent-1 & 
 dunst & 
 udiskie & 
