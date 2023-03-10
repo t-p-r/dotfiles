@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "fibonacci.c": "cpp",
-        "util.h": "c",
-        "drw.h": "c",
-        "*.tcc": "c",
-        "typeinfo": "c"
-    }
-}
